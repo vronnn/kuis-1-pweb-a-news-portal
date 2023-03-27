@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- include bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-danger fs-2" href="#">CNN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featured">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bussiness">Bussiness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popular">Popular</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2 bg-light"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-danger" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- top-news -->
+    <section class="page-1">
+      <section class="top-news">
+        <div class="top-news-card">
+          <img src="/img/top-news-1.jpg" alt="" width="80px" />
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="top-news-card">
+          <img src="/img/top-news-1.jpg" alt="" width="80px" />
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="top-news-card">
+          <img src="/img/top-news-1.jpg" alt="" width="80px" />
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+      </section>
+      <section class="main-news-section">
+        <!--  -->
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide col-8"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card text-bg-dark">
+                <img src="/img/category-4.jpg" class="card-img" alt="..." />
+                <div class="card-img-overlay card-carousel">
+                  <div style="padding: 2rem">
+                    <p class="card-text">
+                      Technology <span> / </span> January 01, 2023
+                    </p>
+                    <h5 class="card-title fs-2 fw-bold">
+                      Sanctus amet sed amet ipsum lorem. Dolores et erat et
+                      elitr sea sed
+                    </h5>
+                    <p class="card-text">
+                      <small>Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card text-bg-dark">
+                <img
+                  src="/img/3DA9C726-1C84-44B7-B64E-321196C429E9_1_201_a.jpeg"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay card-carousel">
+                  <div style="padding: 2rem">
+                    <p class="card-text">
+                      Technology <span> / </span> January 01, 2023
+                    </p>
+                    <h5 class="card-title fs-2 fw-bold">
+                      Sanctus amet sed amet ipsum lorem. Dolores et erat et
+                      elitr sea sed
+                    </h5>
+                    <p class="card-text">
+                      <small>Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--  -->
+
+        <div class="news-bar">
+          <div class="category-bar">
+            <div class="fs-4 fw-bold text-dark">Categories</div>
+            <div class="fs-6 text-dark">view all</div>
+          </div>
+          <div class="category-card-1 text-light fs-5 fw-semibold cat-text">
+            Bussiness
+          </div>
+          <div class="category-card-2 text-light fs-5 fw-semibold cat-text">
+            Technology
+          </div>
+          <div class="category-card-3 text-light fs-5 fw-semibold cat-text">
+            Culture
+          </div>
+          <div class="category-card-4 text-light fs-5 fw-semibold cat-text">
+            Sport
+          </div>
+        </div>
+      </section>
+      <section id="featured" class="featured-section">
+        <div class="featured-head fs-4 fw-bold text-dark">Featured</div>
+        <div class="featured-gallery">
+          <div class="featured-card-1">
+            <p class="text-light fs-6">Technology / January 01, 2023</p>
+            <h5 class="text-light fs-4 fw-semibold">
+              Sanctus amet sed ipsum lorem
+            </h5>
+          </div>
+          <div class="featured-card-2">
+            <p class="text-light fs-6">Technology / January 01, 2023</p>
+            <h5 class="text-light fs-4 fw-semibold">
+              Sanctus amet sed ipsum lorem
+            </h5>
+          </div>
+          <div class="featured-card-3">
+            <p class="text-light fs-6">Technology / January 01, 2023</p>
+            <h5 class="text-light fs-4 fw-semibold">
+              Sanctus amet sed ipsum lorem
+            </h5>
+          </div>
+          <div class="featured-card-4">
+            <p class="text-light fs-6">Technology / January 01, 2023</p>
+            <h5 class="text-light fs-4 fw-semibold">
+              Sanctus amet sed ipsum lorem
+            </h5>
+          </div>
+        </div>
+      </section>
+      <div id="bussiness" class="bussiness-section">
+        <section class="featured-section-2">
+          <div class="featured-head fs-4 fw-bold text-dark">Bussiness</div>
+          <div class="bussiness-gallery">
+            <div class="bussiness-card-1">
+              <p class="text-light fs-6">Technology / January 01, 2023</p>
+              <h5 class="text-light fs-4 fw-semibold">
+                Sanctus amet sed ipsum lorem
+              </h5>
+            </div>
+            <div class="bussiness-card-2">
+              <p class="text-light fs-6">Technology / January 01, 2023</p>
+              <h5 class="text-light fs-4 fw-semibold">
+                Sanctus amet sed ipsum lorem
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section class="featured-section-2">
+          <div class="featured-head fs-4 fw-bold text-dark">Technology</div>
+          <div class="bussiness-gallery">
+            <div class="bussiness-card-1">
+              <p class="text-light fs-6">Technology / January 01, 2023</p>
+              <h5 class="text-light fs-4 fw-semibold">
+                Sanctus amet sed ipsum lorem
+              </h5>
+            </div>
+            <div class="bussiness-card-2">
+              <p class="text-light fs-6">Technology / January 01, 2023</p>
+              <h5 class="text-light fs-4 fw-semibold">
+                Sanctus amet sed ipsum lorem
+              </h5>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="popular" class="third-section-cont">
+        <div class="third-section col-8">
+          <div class="popular-head fs-4 fw-bold text-dark">Popular</div>
+          <div class="d-flex column-gap-4">
+            <div class="card">
+              <img
+                src="/img/pexels-sam-kolder-2387873.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="mb-2" style="font-size: 14px">
+                  <a href="" class="text-danger">Technology</a>
+                  <span class="px-1">/</span>
+                  <span>January 01, 2045</span>
+                </div>
+                <h4>Est stet amet ipsum stet clita rebum duo</h4>
+                <p class="m-0">
+                  Rebum dolore duo et vero ipsum clita, est ea sed duo diam
+                  ipsum, clita at justo, lorem amet vero eos sed sit...
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="/img/pexels-sam-kolder-2387873.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="mb-2" style="font-size: 14px">
+                  <a href="" class="text-danger">Technology</a>
+                  <span class="px-1">/</span>
+                  <span>January 01, 2045</span>
+                </div>
+                <h4>Est stet amet ipsum stet clita rebum duo</h4>
+                <p class="m-0">
+                  Rebum dolore duo et vero ipsum clita, est ea sed duo diam
+                  ipsum, clita at justo, lorem amet vero eos sed sit...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="third-section">
+          <div class="popular-head fs-4 fw-bold text-dark">Follow us</div>
+          <div
+            class="d-flex gap-3"
+            style="flex-wrap: wrap; justify-content: space-between"
+          >
+            <div class="social a">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="social c">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="social d">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="social e">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="social b">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="social f">
+              <i class="fa-brands fa-vine"></i>
+            </div>
+          </div>
+          <div class="popular-head fs-4 fw-bold text-dark">News letter</div>
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">With supporting text below as a natural</p>
+              <form
+                id="signupForm"
+                class="d-flex"
+                style="justify-content: space-between"
+              >
+                <input
+                  type="text"
+                  name="email"
+                  id="emailInput"
+                  placeholder="Your email"
+                  style="
+                    width: 70%;
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+                    border: 1px solid #333;
+                  "
+                />
+                <button
+                  type="submit"
+                  id="submitbtn"
+                  class="bg-danger text-light"
+                  style="
+                    padding: 0.5rem 1rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                  "
+                >
+                  Sign up
+                </button>
+              </form>
+
+              <div
+                id="message"
+                style="display: none"
+                class="fs-5 fw-semibold text-dark"
+              >
+                Thank you for signing up!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <a href="index.html" class="navbar-brand">
+            <h1 class="mb-2 mt-n2 display-5 text-uppercase">
+              <img src="/img/Logo_of_CNN_Indonesia.svg" alt="" width="80px" />
+            </h1>
+          </a>
+          <p>
+            Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem
+            lorem sit sed elitr sed kasd et
+          </p>
+          <div class="d-flex justify-content-start mt-4 gap-2">
+            <a
+              class="btn btn-outline-secondary text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-secondary text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-secondary text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-secondary text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-outline-secondary text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="font-weight-bold mb-4">Categories</h4>
+          <div class="d-flex flex-wrap m-n1">
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Corporate</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Education</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Technology</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Entertainment</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Lifestyle</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="font-weight-bold mb-4">Tags</h4>
+          <div class="d-flex flex-wrap m-n1">
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Corporate</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Education</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Technology</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Entertainment</a
+            >
+            <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+            <a href="" class="btn btn-sm btn-outline-secondary m-1"
+              >Lifestyle</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="font-weight-bold mb-4">Quick Links</h4>
+          <div class="d-flex flex-column justify-content-start">
+            <a class="text-secondary mb-2" href="#">About</a>
+            <a class="text-secondary mb-2" href="#">Advertise</a>
+            <a class="text-secondary mb-2" href="#">Privacy & policy</a>
+            <a class="text-secondary mb-2" href="#">Terms & conditions</a>
+            <a class="text-secondary" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5">
+      <p class="m-0 text-center">
+        &copy;
+        <a
+          class="font-weight-bold text-danger"
+          href="#"
+          style="text-decoration: none"
+          >CNN News</a
+        >. All Rights Reserved.
+        <a href="" class="text-danger">zhafrandzaky</a>
+      </p>
+    </div>
+    <!-- Footer End -->
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
